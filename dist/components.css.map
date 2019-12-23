@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "components.css",
+  "sources": [
+    "../src/components/HelloWorld.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  import { count } from \"../store/store.js\";\n\n  /**\n   * Increases the count variable from the store by 1\n   */\n  function incrementCount() {\n    count.set($count + 1);\n  }\n</script>\n\n<style type=\"text/sass\">.button{background-color:#4caf50;border:none;color:#fff;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px}</style>\n\n<div class=\"flex items-center justify-center h-screen bg-gray-200\">\n  <button class=\"button\" on:click={() => incrementCount()}>\n    Count is {$count}\n  </button>\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAWwB,sBAAO,CAAC,iBAAiB,OAAO,CAAC,OAAO,IAAI,CAAC,MAAM,IAAI,CAAC,QAAQ,IAAI,CAAC,IAAI,CAAC,WAAW,MAAM,CAAC,gBAAgB,IAAI,CAAC,QAAQ,YAAY,CAAC,UAAU,IAAI,CAAC"
+}
